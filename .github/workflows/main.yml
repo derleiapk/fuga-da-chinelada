@@ -34,6 +34,10 @@ jobs:
           if [ ! -d android ]; then npx cap add android; fi
           npx cap sync android
 
+      - name: Gerar ícone e tela de abertura
+        continue-on-error: true
+        run: npx --yes @capacitor/assets@3.0.5 generate --android --iconBackgroundColor '#ff9fc0' --iconBackgroundColorDark '#ff9fc0' --splashBackgroundColor '#ff9fc0' --splashBackgroundColorDark '#ff9fc0'
+
       - name: Compilar o APK
         working-directory: android
         run: |
