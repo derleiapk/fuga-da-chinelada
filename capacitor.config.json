@@ -1,0 +1,8 @@
+{
+  "appId": "com.fugadachinelada.jogo",
+  "appName": "Fuga da Chinelada",
+  "webDir": "www",
+  "android": {
+    "backgroundColor": "#8fd0ff"
+  }
+}
